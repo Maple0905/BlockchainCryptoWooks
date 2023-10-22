@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_add</title>
+    <defs>
+        <path d="M8,0 C12.4234798,0 16,3.57652018 16,8 C16,12.4234798 12.4234798,16 8,16 C3.57652018,16 0,12.4234798 0,8 C0,3.57652018 3.57652018,0 8,0 Z M8,4 C7.44771525,4 7,4.44771525 7,5 L7,5 L7,7 L5,7 C4.48716416,7 4.06449284,7.38604019 4.00672773,7.88337887 L4,8 C4,8.55228475 4.44771525,9 5,9 L5,9 L7,9 L7,11 C7,11.5128358 7.38604019,11.9355072 7.88337887,11.9932723 L8,12 C8.55228475,12 9,11.5522847 9,11 L9,11 L9,9 L11,9 C11.5128358,9 11.9355072,8.61395981 11.9932723,8.11662113 L12,8 C12,7.44771525 11.5522847,7 11,7 L11,7 L9,7 L9,5 C9,4.48716416 8.61395981,4.06449284 8.11662113,4.00672773 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="/wooks" transform="translate(-454.000000, -177.000000)">
+            <g id="Group" transform="translate(250.000000, 126.000000)">
+                <g id="icon/action/ag/add" transform="translate(204.000000, 51.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon_add" fill="#05CCCB" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

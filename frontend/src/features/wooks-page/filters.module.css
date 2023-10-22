@@ -1,0 +1,243 @@
+.wooksPageContainer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+@media only screen and (max-width: 600px) {
+  .wooksPageContainer {
+    overflow: hidden;
+    padding: 0 2px;
+    height: 150%;
+  }
+}
+
+.filterHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 34px;
+}
+
+.filterHeader .filterSelectAll {
+  font-size: 13px;
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+.combo {
+  padding-bottom: 10px;
+}
+
+.filterBtn {
+  display: none;
+  color: #3074ee;
+}
+
+@media only screen and (max-width: 600px) {
+  .filterBtn {
+    width: fit-content;
+    padding: 3px 10px;
+    background: #06cccb;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+  .filterBtn:hover {
+    background: #34efed;
+  }
+}
+
+.filtersContainer {
+  width: 100%;
+  display: flex;
+  max-width: 960px;
+  position: relative;
+  padding: 35px 15px 0;
+  box-sizing: border-box;
+  height: 80%;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .filtersContainer {
+    min-width: 100%;
+    padding-top: 0px;
+  }
+}
+
+.filtersContainer img {
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+}
+
+.filtersContainer img:hover {
+  background: #ffefc361;
+}
+
+.filterBg {
+  display: none;
+  transition: all 0.2s;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.filterBg.showFilter {
+  opacity: 0.65;
+  z-index: 3;
+}
+
+.filterBg svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  color: white;
+  fill: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .filterBg {
+    display: flex;
+  }
+  .filterBg svg {
+    right: 25px;
+  }
+}
+
+.filterBarPlaceholder {
+  width: 235px;
+}
+
+.filterBarContainer {
+  display: flex;
+  flex-flow: column;
+  margin-right: 35px;
+  padding-right: 35px;
+  min-width: 235px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.filterBarContainer .filterTitle {
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .filterBarContainer {
+    position: absolute;
+    left: -350px;
+    transition: all 0.2s;
+    background: white;
+    z-index: 10;
+    padding-left: 20px;
+    padding-top: 20px;
+    max-width: 315px;
+    box-sizing: border-box;
+  }
+  .filterBarContainer.toggled {
+    left: 0;
+    width: 315px;
+    height: 100vh;
+  }
+}
+
+.filterItem {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .filterItem {
+    margin-bottom: 10px;
+  }
+}
+
+.wooksResultsContainer {
+  width: 100%;
+  background: var(--main-wook-bg);
+  display: grid;
+  height: 100%;
+}
+
+.resultsContainer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .resultsContainer {
+    padding: 5px;
+  }
+  .resultsContainer h2 {
+    margin: 0 0 15px 0;
+  }
+}
+
+.filterPills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .filterPills {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+
+.pill {
+  margin-left: 10px;
+  padding: 3px 10px;
+  background: #06cccb;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pill {
+    margin-bottom: 18px;
+  }
+}
+
+.pill span {
+  margin-right: 12px;
+}
+
+.pill > div {
+  cursor: pointer;
+}

@@ -1,0 +1,75 @@
+.communitySectionContainer {
+  background: #54c4c4;
+  width: 100%;
+  padding: 35px 25px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  .communitySectionContainer {
+    padding: 40px 0;
+  }
+}
+.communitySectionContainer .communitySectionInner {
+  max-width: 960px;
+  width: 100%;
+}
+.communitySectionContainer .communitySectionImg {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 600px) {
+  .communitySectionContainer .communitySectionImg {
+    justify-content: space-around;
+  }
+}
+.communitySectionContainer .communitySectionImg .communitySectionImage {
+  width: 220px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .communitySectionContainer .communitySectionImg .communitySectionImage {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+}
+.communitySectionContainer .communitySectionText {
+  display: flex;
+  flex-flow: column;
+  color: white;
+  font-size: 19px;
+  text-align: left;
+}
+@media only screen and (max-width: 600px) {
+  .communitySectionContainer .communitySectionText {
+    padding: 0 25px;
+  }
+}
+.communitySectionContainer .communitySectionText h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 15px 0 0;
+}
+@media only screen and (max-width: 600px) {
+  .communitySectionContainer .communitySectionText h2 {
+    margin: 15px 0 0;
+  }
+}
+.communitySectionContainer .communitySectionText p {
+  line-height: 34px;
+  margin: 8px 0;
+}
+.communitySectionContainer .communitySectionText ul {
+  width: 75%;
+}
+.communitySectionContainer .communitySectionText ul li {
+  margin-bottom: 25px;
+}
+.communitySectionContainer .communitySectionText ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=community-section.module.css.map */

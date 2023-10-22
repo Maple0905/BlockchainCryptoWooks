@@ -1,0 +1,108 @@
+.perksContainer {
+  background: #55c4c4;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+  .social {
+    display: none;
+  }
+  @media only screen and (max-width: 750px) {
+   padding: 0;
+    .social {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 375px;
+      .socialLogos {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 375px;
+        a {
+          height: 30px;
+          margin-right: 25px;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.perksInner {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  max-width: 960px;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+  }
+}
+
+.perksContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 750px) {
+    flex-flow: column;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
+.perksLeft {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  img {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 220px;
+
+  }
+  @media only screen and (max-width: 750px) {
+    width: 100%;
+    align-items: center;
+    order: 2;
+
+  }
+}
+
+.perksRight{
+  width: 70%;
+  @media only screen and (max-width: 750px) {
+    width: 100%;
+  }
+
+
+
+
+  h2 {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  ul {
+    color: white;
+    font-size: 21px;
+    li {
+      margin-bottom: 15px;
+    }
+    @media only screen and (max-width: 600px) {
+      padding-left: 25px;
+    }
+  }
+}

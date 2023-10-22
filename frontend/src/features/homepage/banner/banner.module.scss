@@ -1,0 +1,27 @@
+.bannerContainer {
+  padding: 34px;
+  background: #E7038D;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  > div {
+    margin-right: 30px;
+
+    .wookBannerImage {
+      width: 120px;
+    }
+    img:first-of-type {
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+

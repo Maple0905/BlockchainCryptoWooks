@@ -1,0 +1,115 @@
+.wooksPageContainer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.wookAttributesContainer {
+  width: 100%;
+  display: flex;
+  min-width: 960px;
+  max-width: 75%;
+  position: relative;
+  padding-top: 35px;
+  flex-flow: column;
+}
+
+
+.wookAttributesTransactionsWrapper {
+  display: flex;
+  flex-flow: column;
+
+  h3 {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0 0 25px 0;
+    padding: 0;
+  }
+}
+
+.headerRow, .row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 330px;
+  font-size: 21px;
+  line-height: 24px;
+  color: #000;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.wookAttributesTransactionsTableWrapper {
+
+
+  margin-bottom: 40px;
+
+  .header {
+    background: #F1F1F1;
+    border-top: 1px solid #D8D8D8;
+    border-left: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    color: #333;
+    font-weight: 600;
+    padding: 20px 10px;
+    &:nth-child(4) {
+      border-right: 1px solid #D8D8D8;
+    }
+  }
+
+  .cell {
+    background: #FFF;
+    border-top: 1px solid #D8D8D8;
+    border-left: 1px solid #D8D8D8;
+    color: #333;
+    padding: 0px 10px;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    a {
+      color: #05CCCB;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      background: var(--main-wook-bg);
+      cursor: pointer;
+      &:hover {
+        background: #ffefc361;
+      }
+    }
+
+    &:last-of-type {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0 15px;
+        border-right: 1px solid #D8D8D8;
+    }
+  }
+}
+
+.wookAttributesTransactionRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-right: 1px solid #D8D8D8;
+
+}
+
+.subHeader {
+  grid-column: 1 / 5;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+  padding: 8px 10px;
+  border-left: 1px solid #D8D8D8;
+  border-right: 1px solid #D8D8D8;
+
+}

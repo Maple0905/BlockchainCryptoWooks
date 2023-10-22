@@ -1,0 +1,23 @@
+.wmvContainer {
+  display: none;
+  height: 300px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .wmvContainer {
+    display: flex;
+  }
+}
+.wmvContainer .wmvImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(73px, 1fr));
+  grid-auto-rows: 75px;
+  grid-gap: 0px;
+  width: 100%;
+}
+.wmvContainer .wmvImages img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=wooks-mobile.module.css.map */

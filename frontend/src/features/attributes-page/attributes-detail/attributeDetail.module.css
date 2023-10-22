@@ -1,0 +1,33 @@
+.attributeDetailContainer {
+  width: 100%;
+}
+
+.wooksPageContainer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.wookAttributesContainer {
+  width: 100%;
+  display: flex;
+  min-width: 960px;
+  max-width: 75%;
+  position: relative;
+  padding-top: 35px;
+  flex-flow: column;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+/*# sourceMappingURL=attributeDetail.module.css.map */

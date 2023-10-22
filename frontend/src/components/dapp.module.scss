@@ -1,0 +1,26 @@
+.tokenData {
+  display: flex;
+  flex-flow: column;
+
+  > * {
+    margin-bottom: 10px;
+  }
+}
+
+.metadata {
+  display: flex;
+  flex-flow: column;
+
+  > * {
+    margin-bottom: 10px;
+  }
+
+  .metadataItem {
+    display: flex;
+    flex-flow: column;
+
+    img {
+      image-rendering: pixelated;
+    }
+  }
+}

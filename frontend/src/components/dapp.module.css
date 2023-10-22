@@ -1,0 +1,24 @@
+.tokenData {
+  display: flex;
+  flex-flow: column;
+}
+.tokenData > * {
+  margin-bottom: 10px;
+}
+
+.metadata {
+  display: flex;
+  flex-flow: column;
+}
+.metadata > * {
+  margin-bottom: 10px;
+}
+.metadata .metadataItem {
+  display: flex;
+  flex-flow: column;
+}
+.metadata .metadataItem img {
+  image-rendering: pixelated;
+}
+
+/*# sourceMappingURL=dapp.module.css.map */

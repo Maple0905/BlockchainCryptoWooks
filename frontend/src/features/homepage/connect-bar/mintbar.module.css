@@ -1,0 +1,140 @@
+.mintbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F6C84B;
+}
+
+.mintbarInner {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 50px 0;
+  color: black;
+}
+
+.mintbarInner img {
+  width: 180px;
+  height: 180px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mintbarInner {
+    align-items: center;
+    flex-flow: column;
+  }
+}
+
+.inProgress {
+  display: flex;
+  flex-flow: column;
+  color: #E7038D;
+}
+
+.inProgress span:first-of-type {
+  font-weight: 600;
+}
+
+.inProgressSuccess {
+  display: flex;
+  flex-flow: column;
+  color: #36b685;
+}
+
+.inProgressSuccess span:first-of-type {
+  font-weight: 600;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: #E7038D;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.mintControls {
+  width: 100%;
+  display: flex;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mintControls {
+    flex-flow: column;
+  }
+  .mintControls .numberWrapper {
+    width: 100%;
+  }
+  .mintControls .numberWrapper input {
+    width: 100%;
+  }
+  .mintControls button {
+    margin: 10px 0 0;
+    width: 100%;
+  }
+}
+
+.mintMessage {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.mintStuff {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mintStuff h3 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.mintText {
+  display: flex;
+  flex-flow: column;
+  margin-left: 15px;
+}
+
+.mintText span {
+  padding-top: 4px;
+}
+
+.mintText .remaining {
+  padding-top: 8px;
+}
+
+.numberWrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.numberWrapper input {
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 70px;
+  font-size: 18px;
+  line-height: 40px;
+  padding-left: 15px;
+  outline: none;
+  box-sizing: border-box;
+}

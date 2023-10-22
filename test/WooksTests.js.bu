@@ -1,0 +1,166 @@
+// Test community minting with mock contract that returns 1. Should allow and then fail on second time
+// Test buying wooks
+// Test buying too many wooks
+// Test not enough money
+// Test buying all stars with enough and without enough
+
+import {expect, use} from 'chai';
+import {deployMockContract} from '@ethereum-waffle/mock-contract';
+import { waffle } from "hardhat";
+import {deployContract, MockProvider} from "ethereum-waffle";
+import {ContractFactory} from "@ethersproject/contracts";
+const WooksABI = require('../artifacts/contracts/cryptowooks.sol/CryptoWooks.json');
+const erc721ABI = require('./erc721.abi.json');
+
+
+
+describe("Wooks contract", function () {
+
+  async function setup() {
+
+    const [sender, receiver] = new MockProvider().getWallets();
+    const mockVF = await deployMockContract(sender, erc721ABI.abi);
+    const mockBA = await deployMockContract(sender, erc721ABI.abi);
+    const mockDH = await deployMockContract(sender, erc721ABI.abi);
+    const mockCP = await deployMockContract(sender, erc721ABI.abi);
+    const mockMB = await deployMockContract(sender, erc721ABI.abi);
+    const nft = await ethers.getContractFactory("CryptoWooks");
+
+    const wooksContract = await nft.deploy([mockVF.address, mockBA.address, mockDH.address, mockCP.address, mockM.address]);
+    await wooksContract.deployed();
+    console.log
+    return {sender, receiver, wooksContract, mockVF,mockBA, mockDH, mockCP, mockMB };
+  }
+
+  // `beforeEach` will run before each test, re-deploying the contract every
+  // time. It receives a callback, which can be async.
+  beforeEach(async function () {
+    const {wooksContract, sender} = await setup();
+    const saleIsActive = await wooksContract.saleIsActive.call()
+    if (!saleIsActive) {
+      wooksContract.flipSaleState();
+    }
+    console.log('saleIsActive', saleIsActive)
+  });
+
+  // You can nest describe calls to create subsections.
+  describe("Deployment", function () {
+    // `it` is another Mocha function. This is the one you use to define your
+    // tests. It receives the test name, and a callback function.
+
+    // If the callback function is async, Mocha will `await` it.
+    it("Should set the right owner", async function () {
+      const {wooksContract, sender} = await setup();
+
+      expect(await wooksContract.owner()).to.equal(sender.address);
+    });
+
+    // it("Should assign the total supply of tokens to the owner", async function () {
+    //   const ownerBalance = await wooksContract.balanceOf(owner.address);
+    //   expect(await hardhatToken.totalSupply()).to.equal(ownerBalance);
+    // });
+  });
+  //
+  // async function mintNftDefault(wookContract){
+  //   const val = ethers.utils.parseEther('0.042');
+  //
+  //   return wookContract.mintWook(1, { value: val });
+  // }
+  //
+  // describe("Transactions", function () {
+  //   // it("Should mint a freebie to an NFT owner", async function () {
+  //   //   await wooksContract.checkUserOwnsNFT.returns(1);
+  //   //   await wooksContract.mintCommunityWook({ from: addr1 });
+  //   //   const addr1Balance = await wooksContract.balanceOf(
+  //   //     addr1.address
+  //   //     );
+  //   // expect(addr1Balance).to.equal(1);
+  //
+  //
+  //   // });
+  //   it("gets the count of NFTs for this address", async () => {
+  //     const {contract, sender} = await setup();
+  //
+  //     await expect(await contract.balanceOf(sender.address)).to.eq("0");
+  //
+  //     await mintNftDefault(contract);
+  //
+  //     expect(await contract.balanceOf(sender.address)).to.eq("1");
+  //   });
+  //
+  //   it("gets the count of NFTs for this address", async () => {
+  //     const {contract, mockWook, sender} = await setup();
+  //
+  //     await mockWook.mock.checkUserOwnsNFT.returns(1);
+  //     await expect(await contract.balanceOf(sender.address)).to.eq("0");
+  //
+  //     await contract.mintCommunityWook();
+  //
+  //     expect(await contract.balanceOf(sender.address)).to.eq("1");
+  //   });
+  // })
+
+  // describe("Transactions", function () {
+  //   it("Should transfer tokens between accounts", async function () {
+  //     // Transfer 50 tokens from owner to addr1
+  //     await hardhatToken.transfer(addr1.address, 50);
+  //     const addr1Balance = await hardhatToken.balanceOf(
+  //     addr1.address
+  //     );
+  //     expect(addr1Balance).to.equal(50);
+  //
+  //     // Transfer 50 tokens from addr1 to addr2
+  //     // We use .connect(signer) to send a transaction from another account
+  //     await hardhatToken.connect(addr1).transfer(addr2.address, 50);
+  //     const addr2Balance = await hardhatToken.balanceOf(
+  //     addr2.address
+  //     );
+  //     expect(addr2Balance).to.equal(50);
+  //   });
+  //
+  //   it("Should fail if sender doesn’t have enough tokens", async function () {
+  //     const initialOwnerBalance = await hardhatToken.balanceOf(
+  //     owner.address
+  //     );
+  //
+  //     // Try to send 1 token from addr1 (0 tokens) to owner (1000 tokens).
+  //     // `require` will evaluate false and revert the transaction.
+  //     await expect(
+  //     hardhatToken.connect(addr1).transfer(owner.address, 1)
+  //     ).to.be.revertedWith("Not enough tokens");
+  //
+  //     // Owner balance shouldn't have changed.
+  //     expect(await hardhatToken.balanceOf(owner.address)).to.equal(
+  //     initialOwnerBalance
+  //     );
+  //   });
+  //
+  //   it("Should update balances after transfers", async function () {
+  //     const initialOwnerBalance = await hardhatToken.balanceOf(
+  //     owner.address
+  //     );
+  //
+  //     // Transfer 100 tokens from owner to addr1.
+  //     await hardhatToken.transfer(addr1.address, 100);
+  //
+  //     // Transfer another 50 tokens from owner to addr2.
+  //     await hardhatToken.transfer(addr2.address, 50);
+  //
+  //     // Check balances.
+  //     const finalOwnerBalance = await hardhatToken.balanceOf(
+  //     owner.address
+  //     );
+  //     expect(finalOwnerBalance).to.equal(initialOwnerBalance - 150);
+  //
+  //     const addr1Balance = await hardhatToken.balanceOf(
+  //     addr1.address
+  //     );
+  //     expect(addr1Balance).to.equal(100);
+  //
+  //     const addr2Balance = await hardhatToken.balanceOf(
+  //     addr2.address
+  //     );
+  //     expect(addr2Balance).to.equal(50);
+  //   });
+  // });
+});

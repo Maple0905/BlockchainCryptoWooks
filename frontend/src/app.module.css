@@ -1,0 +1,43 @@
+.App {
+  height: 100%;
+  width: 100%;
+  image-rendering: pixelated;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    min-width: 0;
+  }
+}
+
+h2 {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 600px) {
+  h2 {
+    margin: 15px 0 0;
+  }
+}
+
+p {
+  font-size: 21px;
+  line-height: 34px;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+:root {
+  --main-wook-bg: #F6C84B;
+}
+
+/*# sourceMappingURL=app.module.css.map */

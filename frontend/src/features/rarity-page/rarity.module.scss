@@ -1,0 +1,94 @@
+.wookRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wooksPageContainer {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+
+    h3 {
+        align-self: flex-start;
+    }
+  }
+
+  .tableHeaderContainer {
+    width: 100%;
+    display: flex;
+    max-width: 960px;
+    position: relative;
+    padding-top: 5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .wookDetailContainer {
+    width: 100%;
+    display: flex;
+    max-width: 960px;
+    position: relative;
+    padding-top: 5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 100%;
+    @media only screen and (max-width: 800px) {
+      flex-flow: column;
+    }
+  }
+  
+  .tableheader {
+      display: flex;
+      width: 500px;
+      align-self: flex-start;
+      padding: 20px 0;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      align-items: center;
+
+      span {
+            font-weight: 700;
+          &:nth-child(1) {
+            width: 95px;
+          }
+          &:nth-child(2) {
+              width: 112px;
+          }
+          &:nth-child(3) {width: 145px;}
+      }
+
+      .wookSort{
+        display: flex;
+        align-items: center;
+        width: 124px;
+
+        span {
+            width: 55px;
+            &:nth-child(1) {
+                width: 55px;
+              }
+        }
+      }
+  }
+
+  .wookSort{
+    display: flex;
+    align-items: center;
+    width: 124px;
+    cursor: pointer;
+
+    button {
+        width: 28px;
+        padding: 0;
+        height: 23px;
+        background: transparent;
+        color: black;
+    }
+  }

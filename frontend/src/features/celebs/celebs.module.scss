@@ -1,0 +1,62 @@
+.wooksPageContainer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  .celebrityPageInner {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+
+.celebs {
+  display: flex;
+  height: 100%;
+  flex-flow: row;
+  width: 100%;
+  flex-wrap: wrap;
+
+
+
+  img {
+    width: 120px;
+    margin:15px;
+  }
+
+  .celebCard {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+      button {
+        outline: none;
+        border: none;
+        background: #E7038D;
+        padding: 0;
+        font-size: 14px;
+        line-height: 34px;
+        font-family: "Roboto";
+        font-weight: 600;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        width: 110px;
+        text-align: center;
+
+        &:disabled {
+          background: #cacaca;
+          cursor: not-allowed;
+        }
+      }
+  }
+}

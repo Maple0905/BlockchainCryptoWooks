@@ -1,0 +1,115 @@
+.ctaContainer {
+  display: flex;
+  background: #54C4C4;
+  justify-content: center;
+  padding: 50px 25px;
+  @media only screen and (max-width: 600px) {
+    padding: 20px 0px;
+  }
+  .ctaLayout {
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    justify-content: space-between;
+    @media only screen and (max-width: 600px) {
+     flex-flow: column;
+    }
+    .textContainer {
+      width: 100%;
+      max-width: 65%;
+      flex-flow: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      color: white;
+      padding: 0 20px;
+      box-sizing: border-box;
+      @media only screen and (max-width: 600px) {
+        padding: 20px 25px;
+        order: 2;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      h2 {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 0;
+        margin-bottom: 15px;
+        text-align: left;
+
+        &:last-of-type {
+          margin-bottom: 50px;
+        }
+      }
+
+      a {
+        color: white;
+      }
+
+
+      .viewAllWooksBtn {
+        outline: none;
+        border: none;
+        background: white;
+        padding: 17px 34px;
+        font-size: 14px;
+        font-family: "Roboto";
+        font-weight: 600;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        color: #54c4c4;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &:hover {
+          background: #e3e3e3;
+        }
+      }
+
+    }
+  }
+
+  .ctaWook {
+    display: flex;
+    flex-flow: column;
+    @media only screen and (max-width: 600px) {
+      order: 1;
+      flex-flow: row;
+      justify-content: space-around;
+      padding: 0 5px;
+    }
+  }
+
+  img {
+    width: 220px;
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 150px;
+      &:last-of-type {
+        height: 150px;
+      }
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}

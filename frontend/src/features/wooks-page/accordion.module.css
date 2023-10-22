@@ -1,0 +1,26 @@
+.accordionTitle {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.accordionItem {
+  border-top: 1px solid #D8D8D8;
+  padding: 13px 0;
+}
+
+.accordionToggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.accordionToggle img {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
+/*# sourceMappingURL=accordion.module.css.map */

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  width: auto;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+.container .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  font-size: 16px;
+  margin: 0;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .container .button {
+    width: 175px;
+  }
+}
+
+/*# sourceMappingURL=connectWallet.module.css.map */

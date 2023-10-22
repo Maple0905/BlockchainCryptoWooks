@@ -1,0 +1,111 @@
+.perksContainer {
+  background: #55c4c4;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.perksContainer .social {
+  display: none;
+}
+@media only screen and (max-width: 750px) {
+  .perksContainer {
+    padding: 0;
+  }
+  .perksContainer .social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 375px;
+  }
+  .perksContainer .social .socialLogos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 375px;
+  }
+  .perksContainer .social .socialLogos a {
+    height: 30px;
+    margin-right: 25px;
+  }
+  .perksContainer .social .socialLogos a img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.perksInner {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  max-width: 960px;
+  align-items: center;
+  justify-content: center;
+}
+.perksInner h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.perksContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 750px) {
+  .perksContent {
+    flex-flow: column;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
+.perksLeft {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.perksLeft img {
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 220px;
+}
+@media only screen and (max-width: 750px) {
+  .perksLeft {
+    width: 100%;
+    align-items: center;
+    order: 2;
+  }
+}
+
+.perksRight {
+  width: 70%;
+}
+@media only screen and (max-width: 750px) {
+  .perksRight {
+    width: 100%;
+  }
+}
+.perksRight h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.perksRight ul {
+  color: white;
+  font-size: 21px;
+}
+.perksRight ul li {
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .perksRight ul {
+    padding-left: 25px;
+  }
+}
+
+/*# sourceMappingURL=perks.module.css.map */

@@ -1,0 +1,22 @@
+.communityContainer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.communityMintSectionInner {
+  max-width: 960px;
+  width: 100%;
+}
+.communityMintSection {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+  padding-top: 25px;
+}
+

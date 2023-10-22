@@ -1,0 +1,604 @@
+{
+    "celebs": [
+        {
+            "name": "blue-bear",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "blue-bear",
+            "background": "color-lines"
+        },
+        {
+            "name": "blue-bear",
+            "dance": "dance1"
+        },
+        {
+            "name": "blue-bear",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "blue-bear",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "blue-bear",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "green-bear",
+            "background": "color-lines"
+        },
+        {
+            "name": "green-bear",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "green-bear",
+            "dance": "dance1"
+        },
+        {
+            "name": "green-bear",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "green-bear",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "green-bear",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "orange-bear",
+            "background": "color-lines"
+        },
+        {
+            "name": "orange-bear",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "orange-bear",
+            "dance": "dance1"
+        },
+        {
+            "name": "orange-bear",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "orange-bear",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "orange-bear",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "pink-bear",
+            "background": "color-lines"
+        },
+        {
+            "name": "pink-bear",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "pink-bear",
+            "dance": "dance1"
+        },
+        {
+            "name": "pink-bear",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "pink-bear",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "pink-bear",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "yellow-bear",
+            "background": "color-lines"
+        },
+        {
+            "name": "yellow-bear",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "yellow-bear",
+            "dance": "dance1"
+        },
+        {
+            "name": "yellow-bear",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "yellow-bear",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "yellow-bear",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "lot-dog1",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "lot-dog1",
+            "dance": "dance1"
+        },
+        {
+            "name": "lot-dog1",
+            "dance": "dance3"
+        },
+        {
+            "name": "dog1",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "dog1",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "dog2",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "dog2",
+            "dance": "dance1"
+        },
+        {
+            "name": "dog2",
+            "dance": "dance3"
+        },
+        {
+            "name": "dog2",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "dog2",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "wook17",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "wook17",
+            "background": "dance3"
+        },
+        {
+            "name": "wook17",
+            "background": "dance5"
+        },
+        {
+            "name": "wook17",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "wook17",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "mike",
+            "background": "colored-stars"
+        },
+        {
+            "name": "mike",
+            "dance": "dance2"
+        },
+        {
+            "name": "mike",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "mike",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "mike",
+            "background": "show-lights"
+        },
+        {
+            "name": "mike-alien",
+            "background": "colored-stars"
+        },
+        {
+            "name": "mike-alien",
+            "dance": "dance2"
+        },
+        {
+            "name": "mike-alien",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "mike-alien",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "mike-alien",
+            "background": "show-lights"
+        },
+        {
+            "name": "mike-zombie",
+            "background": "colored-stars"
+        },
+        {
+            "name": "mike-zombie",
+            "dance": "dance2"
+        },
+        {
+            "name": "mike-zombie",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "mike-zombie",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "mike-zombie",
+            "background": "show-lights"
+        },
+        {
+            "name": "page",
+            "background": "colored-stars"
+        },
+        {
+            "name": "page",
+            "dance": "dance2"
+        },
+        {
+            "name": "page",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "page",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "page",
+            "background": "show-lights"
+        },
+        {
+            "name": "page-alien",
+            "background": "colored-stars"
+        },
+        {
+            "name": "page-alien",
+            "dance": "dance2"
+        },
+        {
+            "name": "page-alien",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "page-alien",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "page-alien",
+            "background": "show-lights"
+        },
+        {
+            "name": "page-zombie",
+            "background": "colored-stars"
+        },
+        {
+            "name": "page-zombie",
+            "dance": "dance2"
+        },
+        {
+            "name": "page-zombie",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "page-zombie",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "page-zombie",
+            "background": "show-lights"
+        },
+        {
+            "name": "jon",
+            "background": "colored-stars"
+        },
+        {
+            "name": "jon",
+            "dance": "dance2"
+        },
+        {
+            "name": "jon",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "jon",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "jon",
+            "background": "show-lights"
+        },
+        {
+            "name": "jon-alien",
+            "background": "colored-stars"
+        },
+        {
+            "name": "jon-alien",
+            "dance": "dance2"
+        },
+        {
+            "name": "jon-alien",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "jon-alien",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "jon-alien",
+            "background": "show-lights"
+        },
+        {
+            "name": "jon-zombie",
+            "background": "colored-stars"
+        },
+        {
+            "name": "jon-zombie",
+            "dance": "dance2"
+        },
+        {
+            "name": "jon-zombie",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "jon-zombie",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "jon-zombie",
+            "background": "show-lights"
+        },
+        {
+            "name": "jerry",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "jerry",
+            "background": "colored-stars"
+        },
+        {
+            "name": "jerry",
+            "background": "color-worm"
+        },
+        {
+            "name": "jerry",
+            "background": "color-lines"
+        },
+        {
+            "name": "jerry",
+            "dance": "dance2"
+        },
+        {
+            "name": "jerry",
+            "dance": "dance5"
+        },
+        {
+            "name": "jerry",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "jerry",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "jerry",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "jerry",
+            "background": "show-lights"
+        },
+        {
+            "name": "jerry-alien",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "jerry-alien",
+            "background": "colored-stars"
+        },
+        {
+            "name": "jerry-alien",
+            "background": "color-worm"
+        },
+        {
+            "name": "jerry-alien",
+            "background": "color-lines"
+        },
+        {
+            "name": "jerry-alien",
+            "dance": "dance2"
+        },
+        {
+            "name": "jerry-alien",
+            "dance": "dance5"
+        },
+        {
+            "name": "jerry-alien",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "jerry-alien",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "jerry-alien",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "jerry-alien",
+            "background": "show-lights"
+        },
+        {
+            "name": "jerry-zombie",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "jerry-zombie",
+            "background": "colored-stars"
+        },
+        {
+            "name": "jerry-zombie",
+            "background": "color-worm"
+        },
+        {
+            "name": "jerry-zombie",
+            "background": "color-lines"
+        },
+        {
+            "name": "jerry-zombie",
+            "dance": "dance2"
+        },
+        {
+            "name": "jerry-zombie",
+            "dance": "dance5"
+        },
+        {
+            "name": "jerry-zombie",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "jerry-zombie",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "jerry-zombie",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "jerry-zombie",
+            "background": "show-lights"
+        },
+        {
+            "name": "trey",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "trey",
+            "background": "colored-stars"
+        },
+        {
+            "name": "trey",
+            "background": "color-worm"
+        },
+        {
+            "name": "trey",
+            "background": "color-lines"
+        },
+        {
+            "name": "trey",
+            "dance": "dance2"
+        },
+        {
+            "name": "trey",
+            "dance": "dance5"
+        },
+        {
+            "name": "trey",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "trey",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "trey",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "trey",
+            "background": "show-lights"
+        },
+        {
+            "name": "trey-alien",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "trey-alien",
+            "background": "colored-stars"
+        },
+        {
+            "name": "trey-alien",
+            "background": "color-worm"
+        },
+        {
+            "name": "trey-alien",
+            "background": "color-lines"
+        },
+        {
+            "name": "trey-alien",
+            "dance": "dance2"
+        },
+        {
+            "name": "trey-alien",
+            "dance": "dance5"
+        },
+        {
+            "name": "trey-alien",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "trey-alien",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "trey-alien",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "trey-alien",
+            "background": "show-lights"
+        },
+        {
+            "name": "trey-zombie",
+            "background": "color-band-lines"
+        },
+        {
+            "name": "trey-zombie",
+            "background": "colored-stars"
+        },
+        {
+            "name": "trey-zombie",
+            "background": "color-worm"
+        },
+        {
+            "name": "trey-zombie",
+            "background": "color-lines"
+        },
+        {
+            "name": "trey-zombie",
+            "dance": "dance2"
+        },
+        {
+            "name": "trey-zombie",
+            "dance": "dance5"
+        },
+        {
+            "name": "trey-zombie",
+            "background": "rainbow-bands"
+        },
+        {
+            "name": "trey-zombie",
+            "background": "rainbow-diamonds"
+        },
+        {
+            "name": "trey-zombie",
+            "background": "rainbow-squares"
+        },
+        {
+            "name": "trey-zombie",
+            "background": "show-lights"
+        }
+    ]
+}

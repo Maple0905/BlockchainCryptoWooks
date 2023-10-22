@@ -1,0 +1,69 @@
+.communitySectionContainer {
+  background: #54c4c4;
+  width: 100%;
+  padding: 35px 25px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-sizing: border-box;
+  @media only screen and (max-width: 600px) {
+    padding: 40px 0;
+  }
+
+  .communitySectionInner {
+    max-width: 960px;
+    width: 100%;
+  }
+
+  .communitySectionImg {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 600px) {
+      justify-content: space-around;
+    }
+    .communitySectionImage {
+      width: 220px;
+      margin-bottom: 20px;
+      @media only screen and (max-width: 600px) {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .communitySectionText {
+    display: flex;
+    flex-flow: column;
+    color: white;
+    font-size: 19px;
+    text-align: left;
+    @media only screen and (max-width: 600px) {
+      padding: 0 25px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      margin: 15px 0 0;
+      @media only screen and (max-width: 600px) {
+        margin: 15px 0 0;
+      }
+    }
+
+    p {
+      line-height:34px;
+      margin: 8px 0;
+    }
+
+    ul {
+      width: 75%;
+      li {
+        margin-bottom: 25px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

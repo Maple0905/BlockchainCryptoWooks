@@ -1,0 +1,116 @@
+.mintInfoContainer {
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.mintInfoContainer .mintInfoContainerInner {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  .mintInfoContainer .mintInfoContainerInner {
+    flex-flow: column;
+  }
+}
+.mintInfoContainer .mintInfoContainerInner .textContainer {
+  padding: 0 40px 0 0;
+  border-right: 1px solid #D8D8D8;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.mintInfoContainer .mintInfoContainerInner .textContainer span {
+  font-size: 14px;
+  color: salmon;
+}
+@media only screen and (max-width: 600px) {
+  .mintInfoContainer .mintInfoContainerInner .textContainer p:first-of-type {
+    margin-bottom: 0;
+  }
+}
+.mintInfoContainer .mintInfoContainerInner .mintCard {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 45px 0;
+  justify-content: space-between;
+}
+.mintInfoContainer .mintInfoContainerInner .mintCard:last-of-type {
+  margin-right: 0;
+  padding-left: 45px;
+}
+.mintInfoContainer .mintInfoContainerInner .mintCard:last-of-type .textContainer {
+  border: none;
+  padding: 0;
+}
+.mintInfoContainer .mintInfoContainerInner .mintCard h2 {
+  margin-top: 0;
+}
+.mintInfoContainer .mintInfoContainerInner .mintCard .buttonContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .mintInfoContainer .mintInfoContainerInner .mintCard .buttonContainer {
+    margin-top: 10px;
+  }
+}
+.mintInfoContainer .mintInfoContainerInner .mintCard button {
+  outline: none;
+  border: none;
+  background: #E7038D;
+  padding: 8px 0px;
+  font-size: 14px;
+  line-height: 34px;
+  font-family: "Roboto";
+  font-weight: 600;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  width: 180px;
+  text-align: center;
+  margin-right: 10px;
+}
+.mintInfoContainer .mintInfoContainerInner .mintCard button:disabled {
+  background: #f1f1f1;
+  color: #ACACAC;
+  cursor: not-allowed;
+}
+.mintInfoContainer .mintInfoContainerInner .mintCard button:disabled:hover {
+  background: #f1f1f1;
+}
+@media only screen and (max-width: 600px) {
+  .mintInfoContainer .mintInfoContainerInner .mintCard button {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+.mintInfoContainer .mintInfoContainerInner .mintCard button:hover {
+  background: #f80299;
+}
+@media only screen and (max-width: 600px) {
+  .mintInfoContainer .mintInfoContainerInner .mintCard {
+    width: 100%;
+    padding: 25px 0;
+  }
+  .mintInfoContainer .mintInfoContainerInner .mintCard:last-of-type {
+    margin-right: 0;
+    padding-left: 0;
+  }
+  .mintInfoContainer .mintInfoContainerInner .mintCard .textContainer {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=mint-info.module.css.map */

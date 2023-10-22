@@ -1,0 +1,286 @@
+.wooksPageContainer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+
+  h3 {
+    align-self: flex-start;
+    padding-left: 35px;
+  }
+}
+
+.attributeType {
+  font-weight: 600;
+}
+
+.wookDetailContainer {
+  width: 100%;
+  display: flex;
+  max-width: 960px;
+  position: relative;
+  padding-top: 5px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  @media only screen and (max-width: 800px) {
+    flex-flow: column;
+  }
+}
+
+.viewAllWooksBtn {
+  outline: none;
+  border: none;
+  background: #E7038D;
+  font-size: 16px;
+  line-height: 34px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 180px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: center;
+  @media only screen and (max-width: 800px) {
+    width: 90%;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &:hover {
+    background: #f80299;
+  }
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+  max-width: 960px;
+  margin-top: 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+.paginationButton {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  line-height: 34px;
+  color: #74c9cc;
+
+  &:first-of-type {
+    img {
+      margin-top: -1px;
+      margin-right: 5px;
+    }
+  }
+  &:last-of-type {
+    img {
+      margin-top: -1px;
+      margin-left: 5px;
+    }
+  }
+
+  &.disabled {
+    color: #9b9b9b;
+    text-decoration: none;
+    cursor: not-allowed;
+    &:first-of-type {
+      img {
+        opacity: 0.5
+      }
+    }
+  }
+}
+
+.wookDetailHeroContainer {
+  width: 450px;
+  height: 420px;
+  background: var(--main-wook-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.wookHeroImage {
+  width: 100%;
+}
+
+.wookDetailRight {
+  width: 450px;
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+.wookDetailLeft {
+  margin-right: 35px;
+  display: flex;
+  flex-flow: column;
+  @media only screen and (max-width: 800px) {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+
+.wookBuyRibbonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 30px 0;
+
+  h2 {
+    margin: 0;
+    font-size: 42px;
+    line-height: 34px;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    background: #E7038D;
+    padding: 8px 50px;
+    font-size: 16px;
+    line-height: 34px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      background: #f80299;
+    }
+  }
+}
+
+.wookAttributesDetailContainer {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.wookAttributesColumn {
+  h3 {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0 0 21px 0;
+    padding: 0;
+  }
+}
+
+.wookAttributesItem {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 32px;
+
+  a {
+    color: #05CCCB;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  span {
+    color: #000;
+    text-transform: capitalize;
+  }
+
+  .wookStatTitle {
+    color: #05CCCB;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+}
+
+.wookDetailTransactionsWrapper {
+  display: flex;
+  flex-flow: column;
+
+  h3 {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0 0 25px 0;
+    padding: 0;
+  }
+}
+
+
+.wookDetailTransactionsTableWrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 21px;
+  line-height: 24px;
+  color: #000;
+  border-bottom: 1px solid #D8D8D8;
+
+  margin-bottom: 40px;
+
+  .header {
+    background: #F1F1F1;
+    border-top: 1px solid #D8D8D8;
+    border-left: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    color: #333;
+    font-weight: 600;
+    padding: 20px 10px;
+    &:nth-child(5) {
+      border-right: 1px solid #D8D8D8;
+    }
+  }
+
+  .cell {
+    background: #FFF;
+    border-top: 1px solid #D8D8D8;
+    border-left: 1px solid #D8D8D8;
+    color: #333;
+    padding: 20px 10px;
+    &:nth-child(5n) {
+      border-right: 1px solid #D8D8D8;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #05CCCB;
+      cursor: pointer;
+    }
+  }
+}
+
+.wookDetailTransactionRow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}

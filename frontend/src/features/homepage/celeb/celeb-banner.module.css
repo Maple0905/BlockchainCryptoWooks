@@ -1,0 +1,105 @@
+.celebBannerContainer {
+  background: white;
+  width: 100%;
+  padding: 75px 25px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 775px) {
+  .celebBannerContainer {
+    width: 100%;
+    padding: 45px 25px;
+  }
+}
+.celebBannerContainer .celebBannerInner {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+@media only screen and (max-width: 775px) {
+  .celebBannerContainer .celebBannerInner {
+    flex-flow: column;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.celebBannerContainer .celebImg {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-gap: 20px;
+  grid-template-rows: 200px;
+}
+.celebBannerContainer .celebImg .celebBannerImage {
+  width: 200px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 775px) {
+  .celebBannerContainer .celebImg {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    order: 1;
+  }
+  .celebBannerContainer .celebImg .celebBannerImage {
+    width: 22%;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .celebBannerContainer .celebImg .celebBannerImage {
+    width: 46%;
+    margin: 0;
+  }
+}
+.celebBannerContainer a {
+  font-size: 21px;
+  color: #E7038D;
+  font-weight: 400;
+}
+.celebBannerContainer .viewCelebs {
+  margin-top: 35px;
+  outline: none;
+  border: none;
+  background: #54c4c4;
+  padding: 17px 34px;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 600;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+.celebBannerContainer .celebText {
+  display: flex;
+  flex-flow: column;
+  color: #000;
+  text-align: left;
+  width: 40%;
+}
+@media only screen and (max-width: 775px) {
+  .celebBannerContainer .celebText {
+    padding: 25px;
+    width: 100%;
+    order: 2;
+    margin-top: 10px;
+  }
+}
+.celebBannerContainer .celebText h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.celebBannerContainer .celebText p {
+  margin: 8px 0;
+}
+
+/*# sourceMappingURL=celeb-banner.module.css.map */
